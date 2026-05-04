@@ -3,3 +3,7 @@ export default async (req, context) => {
 
   return new Response(`You're visiting ${city} in ${country}!`);
 };
+
+export const config = {
+  path: "/travel-guide/:city/:country"
+};
